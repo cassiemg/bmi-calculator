@@ -11,6 +11,7 @@ pipeline {
                 sh 'node --version'
                 sh 'npm --version'
                 sh 'npm ci'
+                sh 'npm install -g jest'
             }
         }
         stage('Test') {
