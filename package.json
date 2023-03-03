@@ -25,6 +25,12 @@
     "report-coverage": "cat ./coverage/lcov.info | codecov",
     "cypress": "cypress open"
   },
+  {
+  "name": "continuous-test-code-coverage-guide",
+  "scripts": {
+    "start": "webpack",
+    "test": "jest --coverage --coverageDirectory=output/coverage/jest"
+  },
   "jest": {
     "coverageReporters": [ "text", "cobertura" ],
     "collectCoverageFrom": [
